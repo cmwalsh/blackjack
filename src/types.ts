@@ -1,14 +1,14 @@
 export type Orientation = 'faceup' | 'facedown';
 
 export interface ICard {
-	rank: string;
-	suit: string;
-	orientation: Orientation;
+  rank: string;
+  suit: string;
+  orientation: Orientation;
 }
 
 export interface IDeck {
-	cards: ICard[];
-	create(): void;
-	shuffle(): void;
-	deal(numberOfCards: number): ICard;
+  cards: ICard[];
+  create(): void;
+  shuffle(): void;
+  deal(numberOfCards: number): ICard;
 }

@@ -12,3 +12,10 @@ export interface IDeck {
   shuffle(): void;
   deal(numberOfCards: number): ICard;
 }
+
+export interface IPlayer {
+  cards: ICard[];
+  cardValues: number[];
+  balance: number;
+  bet: number;
+}

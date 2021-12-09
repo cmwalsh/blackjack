@@ -2,14 +2,11 @@
   import type { IPlayer } from "@src/types";
   import Player from "@components/Player.svelte";
 
-  export let player: IPlayer;
+  export let players: IPlayer[];
 </script>
 
 <div class="card-table">
-  <div class="dealer">
+  {#each players as player}
     <Player player={player} />
-  </div>
-  <div class="player">
-    <Player player={player} />
-  </div>
+  {/each}
 </div>

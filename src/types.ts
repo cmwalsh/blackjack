@@ -14,6 +14,7 @@ export interface IDeck {
 }
 
 export interface IPlayer {
+  name: string;
   cards: ICard[];
   cardValues: number[];
   balance: number;
